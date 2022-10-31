@@ -12,6 +12,7 @@
     - [Printers](#printers)
   - [Other](#other)
     - [Setup outlook exchange](#setup-outlook-exchange)
+    - [Setup Firefox](#setup-firefox)
 
 ## post-installation.sh
 
@@ -47,4 +48,15 @@ Install specific drivers
 | email | someone@somewhere.com |
 | password | https://account.live.com/proofs/manage/additional?mkt=en-US&refd=account.microsoft.com&refp=security
 | username | someone@somewhere.com |
-| server | someone@somewhere.com |
+| server | outlook.office365.com |
+
+### Setup Firefox
+
+[Guide](https://www.youtube.com/watch?v=Qltekbt0K58&ab_channel=EasyOSX)
+[Guide](https://www.youtube.com/watch?v=Qltekbt0K58&ab_channel=EasyOSX) 
+
+- about:config
+  - about:config toolkit.legacyUserProfileCustomizations.stylesheets >> True
+- about:support
+  - Open Profile Directory
+    - Copy chrome/userChrome.css

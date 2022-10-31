@@ -3,8 +3,8 @@ sudo apt update && sudo apt upgrade -y
 sudo snap install --classic code # or code-insiders
 # GIT
 sudo apt install git -y
-git config --global user.email gimtsas@hotmail.com
-git config --global user.name George Gkimtsas
+git config --global user.email "gimtsas@hotmail.com"
+git config --global user.name "George Gkimtsas"
 # DOCKER
 sudo apt-get update
 sudo apt-get install ca-certificates curl gnupg lsb-release -y
@@ -52,11 +52,10 @@ sudo snap install dbeaver-ce pencil-snap-demo gnome-boxes pdfmixtool onlyoffice-
 # sudo apt-get install language-pack-el language-pack-gnome-el language-pack-el-base language-pack-gnome-el-base
 # Remove apps
 #sudo snap remove firefox
-sudo apt-get remove --purge libreoffice* -y
-sudo apt-get clean
-sudo apt-get autoremove
+sudo apt remove --purge libreoffice* -y
 sudo apt purge gnome-sudoku gnome-mines gnome-mahjongg aisleriot thunderbird remmina evince ubuntu-report popularity-contest apport whoopsie -y
 # Final update
 sudo apt update -y
 sudo apt upgrade -y
+sudo apt clean
 sudo apt autoremove -y
