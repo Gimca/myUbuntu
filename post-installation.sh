@@ -40,6 +40,10 @@ sudo apt install insync -y
 sudo apt install python3-pip python3-venv -y
 # Postgres
 sudo apt install postgresql postgresql-contrib postgis -y
+# DBeaver
+sudo  wget -O /usr/share/keyrings/dbeaver.gpg.key https://dbeaver.io/debs/dbeaver.gpg.key
+echo "deb [signed-by=/usr/share/keyrings/dbeaver.gpg.key] https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
+sudo apt-get update && sudo apt-get install dbeaver-ce
 # Anydesk
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
 echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
@@ -52,7 +56,7 @@ sudo apt install wireguard -y
 sudo apt install gnome-tweaks gnome-shell-extensions -y
 sudo apt install qgis librecad -y
 sudo apt install virtualbox clamtk pdfarranger xsane imagemagick -y
-sudo snap install dbeaver-ce pencil-snap-demo onlyoffice-desktopeditors obs-studio vlc 
+sudo snap install pencil-snap-demo onlyoffice-desktopeditors obs-studio vlc 
 # windows burner
 #sudo add-apt-repository ppa:tomtomtom/woeusb -y
 #sudo apt update -y; sudo apt upgrade -y;
