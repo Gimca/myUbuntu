@@ -56,7 +56,7 @@ sudo apt install wireguard -y
 sudo apt install gnome-tweaks gnome-shell-extensions -y
 sudo apt install qgis librecad -y
 sudo apt install virtualbox clamtk pdfarranger xsane imagemagick -y
-sudo snap install pencil-snap-demo onlyoffice-desktopeditors obs-studio vlc 
+sudo snap install pencil-snap-demo onlyoffice-desktopeditors obs-studio vlc spotify
 # windows burner
 #sudo add-apt-repository ppa:tomtomtom/woeusb -y
 #sudo apt update -y; sudo apt upgrade -y;
