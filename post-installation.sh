@@ -27,6 +27,7 @@ sudo apt install ./viber.deb -y
 sudo snap install --classic skype
 sudo snap install teams-for-linux
 sudo snap install discord
+sudo snap install rambox
 wget -O- https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
 echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
 sudo apt update
@@ -56,7 +57,7 @@ sudo apt install wireguard -y
 sudo apt install gnome-tweaks gnome-shell-extensions -y
 sudo apt install qgis librecad -y
 sudo apt install virtualbox clamtk pdfarranger xsane imagemagick -y
-sudo snap install pencil-snap-demo onlyoffice-desktopeditors obs-studio vlc spotify
+sudo snap install pencil-snap-demo onlyoffice-desktopeditors obs-studio vlc spotify freetube
 # windows burner
 #sudo add-apt-repository ppa:tomtomtom/woeusb -y
 #sudo apt update -y; sudo apt upgrade -y;
