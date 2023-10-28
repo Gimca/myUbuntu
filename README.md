@@ -37,6 +37,36 @@ Install specific drivers
 - cnijfilter-mx470series-4.10-1-deb.tar.gz
 - linux-brprinter-installer-2.2.3-1.gz
 
+### eGPU
+
+[Guide](https://github.com/hertg/egpu-switcher) | [Source](https://gist.github.com/valteu/1c0a9b7288cc3d77a6654a4d22d0ce9f) | [Binaries](https://github.com/hertg/egpu-switcher/releases)
+
+1. install nvidia driver:
+
+        sudo apt-get install nvidia-driver-525-open
+
+2. reboot
+3. install eGPU switcher:
+
+        sudo cp Downloads/myUbuntu-main/egpu-switcher-amd64 /opt/egpu-switcher
+        sudo chmod 755 /opt/egpu-switcher
+        sudo ln -s /opt/egpu-switcher /usr/bin/egpu-switcher
+        sudo egpu-switcher enable
+
+4. select eGPU
+5. reboot
+6. add Kernel parameter
+  - Open grub file
+        
+        sudo nano /etc/default/grub
+
+  - change line GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" to GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia.NVreg_OpenRmEnableUnsupportedGpus=1"
+  - Update grub
+
+        sudo update-grub
+
+7. reboot
+
 ## Other
 
 ### Setup outlook exchange
