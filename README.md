@@ -39,11 +39,11 @@ Install specific drivers
 
 ### eGPU
 
-[Guide](https://github.com/hertg/egpu-switcher) | [Source](https://gist.github.com/valteu/1c0a9b7288cc3d77a6654a4d22d0ce9f) | [Binaries](https://github.com/hertg/egpu-switcher/releases)
+[Guide](https://gist.github.com/valteu/1c0a9b7288cc3d77a6654a4d22d0ce9f) | [Source](https://github.com/hertg/egpu-switcher) | [Binaries](https://github.com/hertg/egpu-switcher/releases)
 
 1. install nvidia driver:
 
-        sudo apt-get install nvidia-driver-525-open
+        sudo apt-get install nvidia-driver-535-open
 
 2. reboot
 3. install eGPU switcher:
@@ -61,7 +61,7 @@ Install specific drivers
         sudo nano /etc/default/grub
 
   - change line GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" to GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia.NVreg_OpenRmEnableUnsupportedGpus=1"
-  - Update grub
+  - **Update grub**
 
         sudo update-grub
 
@@ -83,10 +83,17 @@ Install specific drivers
 ### Setup Firefox
 
 [Guide](https://www.youtube.com/watch?v=Qltekbt0K58&ab_channel=EasyOSX)
-[Guide](https://www.youtube.com/watch?v=Qltekbt0K58&ab_channel=EasyOSX) 
 
 - about:config
   - about:config toolkit.legacyUserProfileCustomizations.stylesheets >> True
 - about:support
   - Open Profile Directory
     - Copy chrome/userChrome.css
+
+### Gnome extensions
+
+- [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
+- [Logo Menu](https://extensions.gnome.org/extension/4451/logo-menu/)
+- [Places](https://extensions.gnome.org/extension/8/places-status-indicator/)
+- [Extension List](https://extensions.gnome.org/extension/3088/extension-list/)
+- [Lock keys](https://extensions.gnome.org/extension/1532/lock-keys/)
