@@ -45,6 +45,8 @@ sudo apt install postgresql postgresql-contrib postgis -y
 sudo  wget -O /usr/share/keyrings/dbeaver.gpg.key https://dbeaver.io/debs/dbeaver.gpg.key
 echo "deb [signed-by=/usr/share/keyrings/dbeaver.gpg.key] https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
 sudo apt-get update && sudo apt-get install dbeaver-ce
+# SQLite
+sudo apt install sqlite3 -y
 # Anydesk
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
 echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
@@ -56,7 +58,7 @@ sudo apt install wireguard -y
 # Install apps
 sudo apt install gnome-tweaks gnome-shell-extensions -y
 sudo apt install qgis librecad -y
-sudo apt install virtualbox clamtk pdfarranger xsane imagemagick -y
+sudo apt install gparted virtualbox clamtk pdfarranger xsane imagemagick -y
 sudo snap install onlyoffice-desktopeditors obs-studio vlc spotify freetube
 # windows burner
 #sudo add-apt-repository ppa:tomtomtom/woeusb -y
@@ -66,6 +68,7 @@ sudo snap install onlyoffice-desktopeditors obs-studio vlc spotify freetube
 # sudo apt-get install language-pack-el language-pack-gnome-el language-pack-el-base language-pack-gnome-el-base
 # Remove apps
 sudo apt remove --purge libreoffice* -y
+sudo apt remove --purge thunderbird* -y
 sudo apt purge gnome-sudoku gnome-mines gnome-mahjongg aisleriot remmina evince ubuntu-report popularity-contest apport whoopsie rhythmbox -y
 sudo apt purge simple-scan -y
 # Final update
