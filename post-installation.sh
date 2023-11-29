@@ -54,7 +54,7 @@ sudo apt update
 sudo apt install anydesk -y
 # VPN 
 sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
-sudo apt install wireguard -y
+sudo apt install wireguard resolvconf -y
 # Install apps
 sudo apt install gnome-tweaks gnome-shell-extensions -y
 sudo apt install qgis librecad -y
