@@ -15,6 +15,8 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt update -y
 sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
+sudo service docker start
+sudo docker run hello-world
 # EDGE
 sudo apt install apt-transport-https ca-certificates curl software-properties-common wget -y
 sudo wget -O- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-edge.gpg
