@@ -59,9 +59,9 @@ sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 sudo apt install wireguard resolvconf -y
 # Install apps
 sudo apt install gnome-tweaks gnome-shell-extensions -y
-sudo apt install qgis librecad -y
+sudo apt install qgis -y
 sudo apt install gparted virtualbox clamtk pdfarranger xsane imagemagick -y
-sudo snap install onlyoffice-desktopeditors obs-studio vlc spotify freetube
+sudo snap install onlyoffice-desktopeditors obs-studio vlc spotify freetube drawio
 # windows burner
 #sudo add-apt-repository ppa:tomtomtom/woeusb -y
 #sudo apt update -y; sudo apt upgrade -y;
