@@ -14,7 +14,7 @@ echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt update -y
-sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
+sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose -y
 sudo service docker start
 sudo docker run hello-world
 # EDGE
@@ -58,10 +58,10 @@ sudo apt install anydesk -y
 sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 sudo apt install wireguard resolvconf -y
 # Install apps
-sudo apt install gnome-tweaks gnome-shell-extensions -y
+sudo apt install gnome-tweaks gnome-shell-extensions gnome-network-displays -y
 sudo apt install qgis -y
 sudo apt install gparted virtualbox clamtk pdfarranger xsane imagemagick -y
-sudo snap install onlyoffice-desktopeditors obs-studio vlc spotify freetube drawio
+sudo snap install onlyoffice-desktopeditors obs-studio vlc shotwell spotify freetube drawio
 # windows burner
 #sudo add-apt-repository ppa:tomtomtom/woeusb -y
 #sudo apt update -y; sudo apt upgrade -y;
