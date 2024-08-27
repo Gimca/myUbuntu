@@ -24,16 +24,16 @@ echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://
 sudo apt update -y
 sudo apt install microsoft-edge-stable -y
 # COMMS
-wget https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
-sudo apt install ./viber.deb -y
+# wget https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
+# sudo apt install ./viber.deb -y
 # sudo snap install --classic skype
 # sudo snap install teams-for-linux
 # sudo snap install discord
 sudo snap install rambox
-wget -O- https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
-echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
-sudo apt update
-sudo apt install signal-desktop -y
+# wget -O- https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
+# echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
+# sudo apt update
+# sudo apt install signal-desktop -y
 # INSYNC
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ACCAF35C
 sudo bash -c 'echo "deb http://apt.insync.io/ubuntu jammy non-free contrib" >> /etc/apt/sources.list.d/insync.list'
@@ -60,8 +60,9 @@ sudo apt install wireguard resolvconf -y
 # Install apps
 sudo apt install gnome-tweaks gnome-shell-extensions gnome-network-displays -y
 sudo apt install qgis -y
-sudo apt install gparted virtualbox clamtk pdfarranger xsane imagemagick -y
-sudo snap install onlyoffice-desktopeditors obs-studio vlc shotwell spotify freetube drawio
+sudo apt install gparted clamtk calibre pdfarranger xsane imagemagick shotwell solaar -y
+sudo snap install onlyoffice-desktopeditors obs-studio vlc spotify freetube drawio
+wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
 # windows burner
 #sudo add-apt-repository ppa:tomtomtom/woeusb -y
 #sudo apt update -y; sudo apt upgrade -y;
@@ -70,9 +71,9 @@ sudo snap install onlyoffice-desktopeditors obs-studio vlc shotwell spotify free
 # sudo apt-get install language-pack-el language-pack-gnome-el language-pack-el-base language-pack-gnome-el-base
 # Remove apps
 sudo apt remove --purge libreoffice* -y
-sudo apt remove --purge thunderbird* -y
 sudo apt purge gnome-sudoku gnome-mines gnome-mahjongg aisleriot remmina evince ubuntu-report popularity-contest apport whoopsie rhythmbox -y
 sudo apt purge simple-scan -y
+sudo snap remove thunderbird shotwell
 # Final update
 sudo apt update -y
 sudo apt upgrade -y
