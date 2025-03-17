@@ -10,9 +10,13 @@
   - [Additional drivers](#additional-drivers)
     - [drivers.sh](#driverssh)
     - [Printers](#printers)
+    - [eGPU](#egpu)
+      - [wayland](#wayland)
+      - [xorg](#xorg)
   - [Other](#other)
     - [Setup outlook exchange](#setup-outlook-exchange)
     - [Setup Firefox](#setup-firefox)
+    - [Gnome extensions](#gnome-extensions)
 
 ## post-installation.sh
 
@@ -38,6 +42,12 @@ Install specific drivers
 - linux-brprinter-installer-2.2.3-1.gz
 
 ### eGPU
+
+#### wayland
+
+[Guide]() | [Source]()
+
+#### xorg
 
 [Guide](https://gist.github.com/valteu/1c0a9b7288cc3d77a6654a4d22d0ce9f) | [Source](https://github.com/hertg/egpu-switcher) | [Binaries](https://github.com/hertg/egpu-switcher/releases)
 
