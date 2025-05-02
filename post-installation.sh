@@ -49,6 +49,8 @@ echo "deb [signed-by=/usr/share/keyrings/dbeaver.gpg.key] https://dbeaver.io/deb
 sudo apt-get update && sudo apt-get install dbeaver-ce
 # SQLite
 sudo apt install sqlite3 -y
+# KeyPass
+sudo apt install keepassxc -y
 # Anydesk
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
 echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
