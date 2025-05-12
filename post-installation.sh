@@ -60,7 +60,7 @@ sudo apt install anydesk -y
 sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 sudo apt install wireguard resolvconf -y
 # Install apps
-sudo apt install gnome-tweaks gnome-shell-extensions gnome-network-displays -y
+sudo apt install gnome-tweaks gnome-shell-extensions gnome-network-displays nautilus-kdeconnect -y
 sudo apt install qgis -y
 sudo apt install gparted clamtk calibre pdfarranger xsane imagemagick shotwell solaar -y
 sudo snap install onlyoffice-desktopeditors obs-studio vlc spotify freetube drawio
